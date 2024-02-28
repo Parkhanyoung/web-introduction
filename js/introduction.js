@@ -9,12 +9,10 @@ $submitBtn.addEventListener("click", (e) => {
   const $visitorNameInput = $("#visitor-name-input");
   const $favoriteMovieInputs = [...$$(".favorite-content-input")];
 
-  console.log($favoriteMovieInputs);
-
   const visitorName = $visitorNameInput.value;
-  const favoriteMoviesInCommon = $favoriteMovieInputs.filter((input) => input.checked);
+  const favoriteContentsInCommon = $favoriteMovieInputs.filter((input) => input.checked);
 
   if (!visitorName) return alert("이름을 입력해주세요");
 
-  alert(`${visitorName}님, 저와 ${favoriteMoviesInCommon.length}개의 취향이 같으시네요!`);
+  alert(`${visitorName}님, 저와 ${favoriteContentsInCommon.length}개의 취향이 같으시네요!`);
 });
