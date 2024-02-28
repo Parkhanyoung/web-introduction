@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자기소개 페이지</title>
+  <link rel="stylesheet" href="../css/introduction.css" />
+</head>
+
+<body>
+  <div class="self-introduction">
+    <h1>자기소개 🙂</h1>
+    <ul>
+      <li>이름: Ryan</li>
+      <li>사는 곳: 성북구</li>
+      <li>안녕하세요 저는 Ryan 입니다. 우리 모두 힘들지만 화이팅해서 멋진 개발자가 됩시다</li>
+    </ul>
+  </div>
+
+  <div>
+    <h1>인생 컨텐츠 BEST5 🏆</h1>
+    <table class="lifetime-contents-table">
+      <thead>
+        <tr>
+          <th>순위</th>
+          <th>영화 제목</th>
+          <th>포스터</th>
+          <th>바로가기</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr>
+          <td>1</td>
+          <td>HER</td>
+          <td><img src="../images/her.jpeg" /></td>
+          <td><a href="https://serieson.naver.com/v2/movie/294189" target="_blank">네이버 시리즈온</a></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>어바웃타임</td>
+          <td><img src="../images/about_time.jpeg" /></td>
+          <td><a href="https://serieson.naver.com/v2/movie/56491" target="_blank">네이버 시리즈온</a></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>진격의 거인</td>
+          <td><img src="../images/progressing_gient.jpeg" /></td>
+          <td><a href="https://serieson.naver.com/v2/movie/336620" target="_blank">네이버 시리즈온</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div>
+    <form id="visitor-form" name="visitor-info">
+      <h1>방명록 📝</h1>
+      <div class="name-line">
+        <span>이름: </span> <input id="visitor-name-input" type="text" name="visitor-name" />
+      </div>
+      <div class="content-preference">
+        <p>좋아하는 영화: </p>
+        <label for="HER">HER</label><input class="favorite-content-input" name="favorite-content" id="HER"
+          type="checkbox" value="HER" />
+        <label for="어바웃타임">어바웃타임</label><input class="favorite-content-input" name="favorite-content" id="어바웃타임"
+          type="checkbox" value="어바웃타임" />
+        <label for="진격의 거인">진격의 거인</label><input class="favorite-content-input" name="favorite-content" id="진격의 거인"
+          type="checkbox" value="진격의 거인" />
+      </div>
+      <button id="visitor-form-submit-button" type="submit">등록</button>
+      <button type="reset">취소</button>
+  </div>
+  </form>
+
+  <script src="../js/introduction.js"></script>
+</body>
+
+</html>

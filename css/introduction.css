@@ -1,0 +1,10 @@
+.lifetime-contents-table td {
+  width: 30%;
+  text-align: center;
+
+  background-color: rgb(205, 193, 193);
+}
+
+.lifetime-contents-table img {
+  width: 7rem;
+}
